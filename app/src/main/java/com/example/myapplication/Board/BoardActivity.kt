@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.Board
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -85,7 +85,6 @@ class BoardActivity : AppCompatActivity() {
                 list[position] = board
             }
             // 수정된 게시판 데이터로 뷰 갱신
-//            val adapter = BoardAdapter(list)
             val recyclerView = findViewById<androidx.recyclerview.widget.RecyclerView>(id.boardList)
             recyclerView.adapter?.notifyDataSetChanged()
         }

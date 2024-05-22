@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BoardActivity"
+        <activity android:name=".Board.BoardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddBoardActivity" android:exported="false"/>
+        <activity android:name=".Board.AddBoardActivity" android:exported="false"/>
+        <activity android:name=".Character.CharacterActivity" android:exported="false"/>
+        <activity android:name=".Character.AddCharacterActivity" android:exported="false"/>
     </application>
 
 </manifest>

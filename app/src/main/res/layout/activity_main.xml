@@ -19,5 +19,12 @@
             android:layout_height="wrap_content"
             android:text="게시판"/>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/characterRanking"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="산리오 캐릭터 순위"/>
+
     </LinearLayout>
 </LinearLayout>

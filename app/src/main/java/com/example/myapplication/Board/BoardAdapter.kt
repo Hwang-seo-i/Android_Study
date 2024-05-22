@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.Board
 
 import android.app.Activity
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.R
 
 // 데이터 리스트를 실제 눈으로 볼 수 있게 item으로 변환하기 위해 Adapter를 사용
 // BoardAdapter 클래스는 생성자에서 BoardDataClass 객체의 ArrayList를 매개변수로 받음
