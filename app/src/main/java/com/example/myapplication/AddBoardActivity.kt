@@ -11,19 +11,19 @@ import java.util.Calendar
 
 class AddBoardActivity : AppCompatActivity() {
 
-    private val list = dummyData()
+//    private val list = dummyData()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_board)
+
+        //  titleText : 제목 입력
+        val titleText = findViewById<TextView>(R.id.text_input_title)
 
         // 편집 모드에서, intent에서 제목과 날짜 데이터 받아서 textinput에 설정
         if (intent.getBooleanExtra("edit_mode", false)) {
             findViewById<TextInputEditText>(R.id.text_input_title).setText(intent.getStringExtra("title"))
             findViewById<TextInputEditText>(R.id.text_selected_date).setText(intent.getStringExtra("date"))
         }
-
-        //  titleText : 제목 입력
-        val titleText = findViewById<TextView>(R.id.text_input_title)
 
         //  calendar 객체 생성
         val calendar = Calendar.getInstance()
@@ -37,7 +37,7 @@ class AddBoardActivity : AppCompatActivity() {
             val datePickerDialog = DatePickerDialog(
                 this,
                 { view, year, month, dayOfMonth ->
-                    textSelectedDate.text = "${year}- ${month + 1}- ${dayOfMonth}"
+                    textSelectedDate.text = "${year}-${month + 1}-${dayOfMonth}"
                 },
                 year,
                 month,
@@ -61,16 +61,18 @@ class AddBoardActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
             } else {
                 //  게시판에 추가
-                val number = if (list.isEmpty()) 1 else list.last().number + 1
-                val board = BoardDataClass(number, title, date)
-                list.add(board)
+//                // number는 게시판 리스트가 비어있으면 1, 아니면 마지막 게시판의 number + 1
+//                val number = if (list.isEmpty()) 1 else list.last().number + 1
+//                val board = BoardDataClass(number, title, date)
+//                list.add(board)
 
                 // 결과를 인텐트에 담아서 이전 화면에 전달
-                val intent = Intent(this, BoardActivity::class.java)
-//                intent.putExtra("number", number)
+                val intent = Intent()
                 intent.putExtra("title", title)
                 intent.putExtra("date", date)
-                intent.putExtra("position", this.intent.getIntExtra("position", -1))
+                // position은 게시판 리스트의 마지막 인덱스
+                // defaultValue가 0이므로 게시판 리스트가 비어있으면 0
+                intent.putExtra("position", this.intent.getIntExtra("position", 0))
                 setResult(RESULT_OK, intent)
                 finish()
             }
