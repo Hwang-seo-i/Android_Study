@@ -32,6 +32,22 @@
         <activity android:name=".Board.AddBoardActivity" android:exported="false"/>
         <activity android:name=".Character.CharacterActivity" android:exported="false"/>
         <activity android:name=".Character.AddCharacterActivity" android:exported="false"/>
+        <activity android:name=".Dog.DogActivity" android:exported="false"/>
+        <activity android:name=".Dog.AddDogActivity" android:exported="false"/>
+        <activity android:name=".English.EnglishActivity" android:exported="false"/>
+        <activity android:name=".English.AddEnglishActivity" android:exported="false"/>
+        <activity android:name=".Food.FoodActivity" android:exported="false"/>
+        <activity android:name=".Food.AddFoodActivity" android:exported="false"/>
+        <activity android:name=".Family.AddFamilyActivity" android:exported="false"/>
+        <activity android:name=".Family.FamilyActivity" android:exported="false"/>
+        <activity android:name=".Gyudong.GyudongActivity" android:exported="false"/>
+        <activity android:name=".Gyudong.AddGyudongActivity" android:exported="false"/>
+        <activity android:name=".Korean.AddKoreanActivity" android:exported="false"/>
+        <activity android:name=".Korean.KoreanActivity" android:exported="false"/>
+        <activity android:name=".Music.AddMusicActivity" android:exported="false"/>
+        <activity android:name=".Music.MusicActivity" android:exported="false"/>
+        <activity android:name=".Seoi.AddSeoiActivity" android:exported="false"/>
+        <activity android:name=".Seoi.SeoiActivity" android:exported="false"/>
     </application>
 
 </manifest>

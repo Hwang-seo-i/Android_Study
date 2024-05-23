@@ -26,5 +26,61 @@
             android:layout_height="wrap_content"
             android:text="산리오 캐릭터 순위"/>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dog"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="강아지 종류"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/English"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="영어"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Family"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가족"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Food"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음식"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Gyudong"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="규동"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Korean"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한글"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Music"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음악"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Seoi"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서이"/>
+
     </LinearLayout>
 </LinearLayout>

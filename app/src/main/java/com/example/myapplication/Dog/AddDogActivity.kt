@@ -1,15 +1,15 @@
-package com.example.myapplication.Character
+package com.example.myapplication.Dog
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R.*
 
-class AddCharacterActivity : AppCompatActivity() {
+class AddDogActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_add_character)
+        setContentView(layout.activity_add_dog)
 
         val nameText = findViewById<android.widget.TextView>(id.text_input_name)
 
@@ -17,8 +17,8 @@ class AddCharacterActivity : AppCompatActivity() {
             findViewById<android.widget.EditText>(id.text_input_name).setText(intent.getStringExtra("name"))
         }
 
-        val btnAddCharacter = findViewById<android.widget.TextView>(id.btnsave)
-        btnAddCharacter.setOnClickListener {
+        val btnAddDog = findViewById<android.widget.TextView>(id.btnsave)
+        btnAddDog.setOnClickListener {
             val name = nameText.text.toString().trim()
 
             if (name.isNotEmpty()) {

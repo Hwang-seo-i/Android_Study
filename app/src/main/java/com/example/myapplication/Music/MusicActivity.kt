@@ -1,11 +1,11 @@
-package com.example.myapplication.Character
+package com.example.myapplication.Music
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R.*
 
-class CharacterActivity : AppCompatActivity() {
+class MusicActivity : AppCompatActivity() {
 
     companion object {
         val REQUEST_CODE_CHAR_ADD = 100
@@ -19,7 +19,7 @@ class CharacterActivity : AppCompatActivity() {
         setContentView(layout.activity_character)
 
         // 더미 데이터 띄우기
-        val adapter = CharacterAdapter(Characterlist)
+        val adapter = MusicAdapter(Characterlist)
 
         val recyclerView = findViewById<androidx.recyclerview.widget.RecyclerView>(id.characterList)
         recyclerView.adapter = adapter
@@ -27,7 +27,7 @@ class CharacterActivity : AppCompatActivity() {
         val btnAddPlus = findViewById<android.widget.ImageButton>(id.btnAddPlus)
         btnAddPlus.setOnClickListener {
             // 캐릭터 추가 액티비티로 이동
-            val intent = android.content.Intent(this, AddCharacterActivity::class.java)
+            val intent = android.content.Intent(this, AddMusicActivity::class.java)
 
             startActivityForResult(intent, REQUEST_CODE_CHAR_ADD)
         }
